@@ -1,31 +1,31 @@
 <div class="container">
   <br><h1>메일 작성</h1><br>
-  <form>
+  <form action="/sending" method="POST">
     <div class="form-group">
       <label for="exampleFormControlInput1">받는 사람</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <input type="email" name='r_email' class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
     
     <div class="form-group">
       <label for="exampleFormControlInput1">보내는 사람</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <input type="email" name='s_email' class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
     
     <div class="form-group">
       <label for="exampleFormControlInput1">제목</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1">
+      <input type="text" name='title' class="form-control" id="exampleFormControlInput1">
     </div>
     
     <div class="form-group">
       <label for="exampleFormControlTextarea1">내용</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+      <textarea class="form-control" name='content' id="exampleFormControlTextarea1" rows="7"></textarea>
     </div>
     
     <div class="form-group">
       <label for="exampleFormControlFile1">파일 첨부</label>
-      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      <input type="file" name='file' class="form-control-file" id="exampleFormControlFile1">
     </div>
     
-    <button type="button" class="btn btn-primary">전송</button>
+    <button type="submit" class="btn btn-primary">전송</button>
   </form>
 </div>
